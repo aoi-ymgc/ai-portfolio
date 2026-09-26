@@ -374,6 +374,31 @@ button:focus-visible {
   object-position: top;
   border: 1px solid var(--line);
 }
+.case-support .case-support__comparison {
+  aspect-ratio: 2.55;
+  object-fit: contain;
+  background: var(--soft);
+}
+.tool-roles {
+  display: grid;
+  gap: 7px;
+  margin: 18px 0 20px;
+  padding: 0;
+  list-style: none;
+}
+.tool-roles li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.tool-roles strong {
+  color: var(--navy);
+  font-size: 12px;
+}
 .case-grid {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
@@ -800,6 +825,11 @@ button:focus-visible {
   object-fit: contain;
   background: #f3f4f6;
 }
+.screenshot-grid--aoi .rpl-comparison {
+  aspect-ratio: 2.55;
+  object-fit: contain;
+  background: var(--soft);
+}
 .case-back {
   display: flex;
   justify-content: center;
@@ -876,6 +906,11 @@ button:focus-visible {
   }
   .step-flow {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) and (min-width: 681px) {
+  .workflow-list li:nth-child(3)::after {
+    display: none;
   }
 }
 @media (max-width: 680px) {
@@ -997,14 +1032,14 @@ button:focus-visible {
     grid-template-rows: auto 1fr !important;
   }
   .knowledge-mini {
-    grid-template-columns: 1fr auto 1fr auto 1.25fr;
+    grid-template-columns: 1fr;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     padding: 18px;
   }
   .knowledge-mini strong {
-    padding: 5px;
-    font-size: 11px;
+    padding: 6px 10px;
+    font-size: 12px;
   }
   .knowledge-mini i {
     font-size: 12px;
@@ -1076,7 +1111,7 @@ button:focus-visible {
   }
   .profile-copy > p:not(.eyebrow) {
     text-align: left;
-    font-size: 14px;
+    font-size: 15px;
   }
   .footer-inner {
     min-height: 72px;
@@ -1088,7 +1123,7 @@ button:focus-visible {
     font-size: 34px;
   }
   .detail-lead {
-    font-size: 14px;
+    font-size: 15px;
   }
   .detail-section {
     padding-block: 39px;
