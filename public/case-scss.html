@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SCSSナビ | AI活用ポートフォリオ</title>
+    <meta
+      name="description"
+      content="初心者向けSCSS学習ツールの教材構成、UI設計とAI実装支援の事例。"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SCSSナビ | AI活用ポートフォリオ" />
+    <meta
+      property="og:description"
+      content="SCSSの環境準備から小規模なWebページ制作まで段階的に学ぶツール。"
+    />
+    <meta property="og:image" content="assets/img/scss-navi/lesson-setup.png" />
+    <link rel="icon" href="assets/img/brand-favicon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script src="assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="AI活用ポートフォリオ トップ"
+          ><img
+            src="assets/img/brand-logo-header.webp"
+            alt="AOI YAMAGUCHI"
+            width="100"
+            height="84" /></a
+        ><a class="text-link" href="index.html#cases">← Case Studies</a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="detail-hero">
+        <div class="container">
+          <p class="breadcrumb"><a href="index.html">トップ</a> / SCSSナビ</p>
+          <p class="detail-category">
+            LEARNING TOOL / CONTENT DESIGN / AI DEVELOPMENT
+          </p>
+          <h1>SCSSナビ</h1>
+          <p class="detail-lead">
+            SCSSを初めて触る人が、環境準備から小規模なWebページ制作まで段階的に学べる初心者向け学習ツールです。教材構成・学習順序・UIを整理し、AIを実装や改善の支援に活用しています。
+          </p>
+        </div>
+      </section>
+      <section class="detail-section">
+        <div class="container">
+          <h2>目的と学習設計</h2>
+          <p>
+            CSSは使えるがSCSSは初めてという人が、環境準備でつまずかず学習できる教材を目指しました。VS
+            Codeを使いながら、ターミナル操作を基本的に必須とせず、Live Sass
+            Compilerなどで変換を確かめる構成です。
+          </p>
+          <p>
+            CSSとSCSSの違いから始め、環境準備、ネスト、&、変数、ファイル分割、@use、mixin、レスポンシブへと進みます。最終的に、小規模なWebページをSCSSで実装できるレベルを目指しています。
+          </p>
+        </div>
+      </section>
+      <section class="detail-section">
+        <div class="container">
+          <h2>自分が担当したこと</h2>
+          <div class="detail-columns">
+            <div>
+              <h3>教材の方針</h3>
+              <p>
+                対象ユーザー、学習範囲、Lesson順序、説明粒度、教材全体の方向性を決めました。
+              </p>
+            </div>
+            <div>
+              <h3>UI・学習体験</h3>
+              <p>
+                どのファイルを開き、どこへ書き、保存後に何を確認するかが追える画面構成と説明を整理しました。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section">
+        <div class="container">
+          <h2>AIを使ったこと</h2>
+          <p><strong>ChatGPT:</strong> 要件整理・教材構成の検討。</p>
+          <p><strong>Codex:</strong> Webツールとしての実装・修正。</p>
+          <p>
+            生成内容をそのまま採用せず、初心者が説明を見ながら進められるか、実画面や操作の順序を確認しています。
+          </p>
+        </div>
+      </section>
+      <section class="detail-section">
+        <div class="container">
+          <h2>学習画面</h2>
+          <p>
+            実際の公開版から、環境準備、基本記法、コード確認へ進むLesson画面を掲載しています。
+          </p>
+          <div class="screenshot-grid">
+            <figure>
+              <img
+                src="assets/img/scss-navi/lesson-01.png"
+                alt="CSSとSCSSの違いを学ぶLesson画面"
+                width="1440"
+                height="2895"
+                loading="lazy"
+              />
+              <figcaption>CSSとSCSSの違いを、例を見ながら理解する。</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/img/scss-navi/lesson-setup.png"
+                alt="VS CodeでWatch Sassを動かす操作案内とコード例"
+                width="1440"
+                height="2895"
+                loading="lazy"
+              />
+              <figcaption>
+                環境準備 — 操作する場所と、保存後に見るものを示す。
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/img/scss-navi/lesson-nesting.png"
+                alt="SCSSのネストを説明するLesson画面"
+                width="1440"
+                height="2895"
+                loading="lazy"
+              />
+              <figcaption>
+                ネスト — コード例と出力を確認しながら進む。
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/img/scss-navi/lesson-variables.png"
+                alt="SCSS変数の使い方を説明するLesson画面"
+                width="1440"
+                height="2895"
+                loading="lazy"
+              />
+              <figcaption>変数 — 値をまとめて使う方法を学ぶ。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section">
+        <div class="container">
+          <h2>結果</h2>
+          <p>
+            学習する人が次の操作を見失わないよう、VS
+            Codeの操作案内、コード例、保存後の確認、完了チェックをLessonごとに整理しました。
+          </p>
+          <p>
+            <a href="https://scss-navigator.aoiroymgc.workers.dev/"
+              >SCSSナビを開く</a
+            >
+          </p>
+        </div>
+      </section>
+      <div class="container case-back">
+        <a class="button button--primary" href="index.html#cases"
+          >Case Studiesへ戻る</a
+        >
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>山口 碧</span><small>© 2026 Aoi Yamaguchi</small>
+      </div>
+    </footer>
+  </body>
+</html>
