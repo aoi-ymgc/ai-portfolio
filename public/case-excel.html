@@ -3,25 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Excel × Microsoft Copilot | AI活用ポートフォリオ</title>
-    <meta
-      name="description"
-      content="Excelの定型集計・確認作業をCopilotと進め、手順やプロンプトとして再利用する事例。"
-    />
+    <title>Excel × Microsoft Copilotの活用｜山口 碧</title>
+    <meta name="description" content="回答データと参照データの照合・集計を、確認手順やプロンプトと一緒に再利用する事例。実データや勤務先情報は掲載していません。" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="https://ai-portfolio.aoiroymgc.workers.dev/assets/img/og-ai-portfolio.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="山口 碧のWeb/UIデザイン・AI活用事例" />
     <link rel="canonical" href="https://ai-portfolio.aoiroymgc.workers.dev/case-excel" />
     <meta property="og:url" content="https://ai-portfolio.aoiroymgc.workers.dev/case-excel" />
-    <meta
-      property="og:title"
-      content="Excel × Microsoft Copilot | AI活用ポートフォリオ"
-    />
-    <meta
-      property="og:description"
-      content="参照データを変更しても繰り返し使える集計・照合の手順を整理。"
-    />
+    <meta property="og:title" content="Excel × Microsoft Copilotの活用｜山口 碧" />
+    <meta property="og:description" content="回答データと参照データの照合・集計を、確認手順やプロンプトと一緒に再利用する事例。実データや勤務先情報は掲載していません。" />
     <link rel="icon" href="assets/img/brand-favicon.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,111 +26,68 @@
     <script src="assets/js/site.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">本文へスキップ</a>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a
-          class="brand"
-          href="index.html"
-          aria-label="AI活用ポートフォリオ トップ"
-          ><img
-            src="assets/img/brand-logo-header.webp"
-            alt="AOI YAMAGUCHI"
-            width="100"
-            height="84" /></a
-        ><a class="text-link" href="index.html#cases">← Case Studies</a>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="山口 碧 AI活用ポートフォリオ トップ"><img src="assets/img/brand-logo-header.webp" alt="AOI YAMAGUCHI" width="364" height="369" /></a>
+      <a class="text-link" href="index.html#cases">← Case Studies</a>
+    </div>
+  </header>
+  <main id="main">
+    <section class="detail-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">トップ</a> / Excel × Microsoft Copilot</p>
+        <p class="detail-category">業務手順の整理</p>
+        <h1>Excel × Microsoft Copilot</h1>
+        <p class="detail-lead">回答データと参照データを照らし合わせ、差異を確認して分析用に集計する作業にCopilotを使っています。作業手順・確認箇所・プロンプトを整理し、同様の作業で繰り返し使える形にしています。</p>
+        <dl class="case-overview">
+          <div><dt>目的</dt><dd>同様の照合・集計を、確認手順と一緒に再利用する</dd></div>
+          <div><dt>本人</dt><dd>手順・プロンプトの作成、結果確認、修正、最終判断</dd></div>
+          <div><dt>AI</dt><dd>Copilotによる照合・集計・データ整理の補助</dd></div>
+        </dl>
       </div>
-    </header>
-    <main id="main">
-      <section class="detail-hero">
-        <div class="container">
-          <p class="breadcrumb">
-            <a href="index.html">トップ</a> / Excel × Microsoft Copilot
-          </p>
-          <p class="detail-category">BUSINESS / EXCEL / AI WORKFLOW</p>
-          <h1>Excel × Microsoft Copilot</h1>
-          <p class="detail-lead">
-            Excelで行う定型的な集計や確認作業にCopilotを取り入れ、繰り返し利用できる手順やプロンプトとして整理しています。
-          </p>
-        </div>
-      </section>
-      <section class="detail-section">
-        <div class="container">
-          <h2>作業フロー</h2>
-          <p>
-            回答データと参照データを照らし合わせ、差異を確認してから分析用に集計します。Copilotは照合・集計・整理を補助し、結果は人が確認します。
-          </p>
-          <div
-            class="diagram-flow"
-            aria-label="回答データから人による確認までの作業の流れ"
-          >
-            <span>フォーム等の<br />回答データ</span><i>→</i
-            ><span>参照データ</span><i>→</i><strong>照合</strong><i>→</i
-            ><strong>差異確認</strong><i>→</i><span>分析用の集計</span><i>→</i
-            ><span>人による確認</span>
-          </div>
-          <p class="mini-note">
-            掲載内容は手順の説明用です。勤務先名、実務データ、実際のExcel画面は掲載していません。
-          </p>
-        </div>
-      </section>
-      <section class="detail-section">
-        <div class="container">
-          <h2>自分とCopilotの役割</h2>
-          <div class="detail-columns">
-            <div>
-              <h3>自分</h3>
-              <ul>
-                <li>プロンプトを作成する</li>
-                <li>結果を確認する</li>
-                <li>必要な修正を加える</li>
-                <li>最終判断する</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Copilot</h3>
-              <ul>
-                <li>照合を補助する</li>
-                <li>集計を補助する</li>
-                <li>データを整理する</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="detail-section">
-        <div class="container">
-          <h2>手順を繰り返し使える形へ</h2>
-          <p>
-            作業内容と確認箇所を整理し、プロンプトにまとめます。次回は参照データを入れ替えて同じ流れを使い、結果を確認してから活用します。
-          </p>
-          <ol class="step-flow">
-            <li><span>01</span><strong>手順を整理する</strong></li>
-            <li><span>02</span><strong>プロンプト化する</strong></li>
-            <li><span>03</span><strong>参照データを変更する</strong></li>
-            <li><span>04</span><strong>同じ流れを再利用する</strong></li>
-            <li><span>05</span><strong>人が結果を確認する</strong></li>
+    </section>
+
+    <section class="detail-section">
+      <div class="container">
+        <h2>照合から集計までを、確認できる流れにする</h2>
+        <p>回答データと参照データを照合し、差異を確認してから分析用に集計します。Copilotには照合・集計・整理を補助させ、出力は自分で確認・修正してから使います。</p>
+        <figure class="case-figure">
+          <ol class="case-flow" aria-label="回答データと参照データを照合し、人が確認するまでの作業手順">
+            <li class="case-flow__inputs">
+              <div><strong>回答データ</strong></div>
+              <span class="case-flow__operator" aria-hidden="true">＋</span>
+              <div><strong>参照データ</strong></div>
+            </li>
+            <li><strong>照合</strong></li>
+            <li><strong>差異確認</strong></li>
+            <li><strong>分析用集計</strong></li>
+            <li><strong>人による確認</strong></li>
           </ol>
-        </div>
-      </section>
-      <section class="detail-section">
-        <div class="container">
-          <h2>結果</h2>
-          <p>
-            手順とプロンプトを一緒に整理することで、同様の照合・集計作業に使える流れを作っています。AIの出力は確認・修正を経てから判断に使います。
-          </p>
-        </div>
-      </section>
-      <div class="container case-back">
-        <a class="button button--primary" href="index.html#cases"
-          >Case Studiesへ戻る</a
-        >
+          <figcaption>図は作業手順の説明用です。勤務先名、実データ、実際の業務画面は掲載していません。</figcaption>
+        </figure>
       </div>
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span>山口 碧</span><small>© 2026 Aoi Yamaguchi</small>
+    </section>
+
+    <section class="detail-section">
+      <div class="container">
+        <h2>次回も使えるように、3つを残す</h2>
+        <ul>
+          <li><strong>作業手順</strong> — どの順番で照合・確認・集計するか。</li>
+          <li><strong>確認箇所</strong> — AIの出力を使う前に、何を確かめるか。</li>
+          <li><strong>プロンプト</strong> — 同様の作業で使う指示を、手順と一緒に整理。</li>
+        </ul>
+        <p>次回は参照データを変更して同じ流れを使い、結果を確認してから活用します。</p>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="detail-section">
+      <div class="container">
+        <h2>再利用できる作業の流れ</h2>
+        <p>手順と確認箇所、プロンプトをまとめ、同様の照合・集計に使える流れを作っています。最終的な確認と判断は自分で行います。</p>
+      </div>
+    </section>
+    <div class="container case-back"><a class="button button--primary" href="index.html#cases">Case Studiesへ戻る</a></div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span>山口 碧</span><small>© 2026 Aoi Yamaguchi</small></div></footer>
+</body>
 </html>
