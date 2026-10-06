@@ -166,11 +166,11 @@
         <div class="container">
           <div class="section-heading"><h2 id="workflow-title">制作の工程に合わせて、AIを使い分ける。</h2></div>
           <ol class="workflow-list">
-            <li><span class="workflow-number">01</span><h3>目的と条件を整理</h3><div><p>誰が何に使うか、必要な条件を決めます。</p><p class="workflow-support">AI支援: ChatGPTで要件を整理し、必要に応じてGeminiで公開情報を調べます。</p></div></li>
-            <li><span class="workflow-number">02</span><h3>構成とデザインを決定</h3><div><p>画面構成、UI、ロゴ、必要な機能を自分で制作・判断します。</p><p class="workflow-support">AI支援: 関係するKnowledgeを参照し、判断材料を確認します。</p></div></li>
-            <li><span class="workflow-number">03</span><h3>制作・実装</h3><div><p>決めた仕様とデザインをもとに、画面や機能を形にします。</p><p class="workflow-support">AI支援: Codexを使って実装・コード確認・修正を進めます。</p></div></li>
-            <li><span class="workflow-number">04</span><h3>実画面で確認</h3><div><p>表示、操作、内容を確かめ、直す箇所を判断します。</p><p class="workflow-support">AI支援: Codexの検証や、必要に応じてGeminiの一次レビューを使います。</p></div></li>
-            <li><span class="workflow-number">05</span><h3>修正・仕上げ</h3><div><p>修正後の画面を確認し、完成と公開の判断を行います。</p><p class="workflow-support">AI支援: Codexで修正を進め、使い回す手順や判断基準を整理します。</p></div></li>
+            <li><span class="workflow-number">01</span><h3>目的と条件を整理</h3><div><p><span class="workflow-owner">本人:</span> 誰が何に使うか、必要な条件を決めます。</p><p class="workflow-support">AI支援: ChatGPTで要件を整理し、必要に応じてGeminiで公開情報を調べます。</p></div></li>
+            <li><span class="workflow-number">02</span><h3>構成とデザインを決定</h3><div><p><span class="workflow-owner">本人:</span> 画面構成、UI、ロゴ、必要な機能を自分で制作・判断します。</p><p class="workflow-support">AI支援: 関係するKnowledgeを参照し、判断材料を確認します。</p></div></li>
+            <li><span class="workflow-number">03</span><h3>制作・実装</h3><div><p><span class="workflow-owner">本人:</span> 決めた仕様とデザインをもとに、画面や機能を形にします。</p><p class="workflow-support">AI支援: Codexを使って実装・コード確認・修正を進めます。</p></div></li>
+            <li><span class="workflow-number">04</span><h3>実画面で確認</h3><div><p><span class="workflow-owner">本人:</span> 表示、操作、内容を確かめ、直す箇所を判断します。</p><p class="workflow-support">AI支援: Codexの検証や、必要に応じてGeminiの一次レビューを使います。</p></div></li>
+            <li><span class="workflow-number">05</span><h3>修正・仕上げ</h3><div><p><span class="workflow-owner">本人:</span> 修正後の画面を確認し、完成と公開の判断を行います。</p><p class="workflow-support">AI支援: Codexで修正を進め、使い回す手順や判断基準を整理します。</p></div></li>
           </ol>
           <div class="workflow-note">
             <h3>制作ルールも、次の作業へ。</h3>
@@ -182,13 +182,13 @@
 
       <section class="section tools" id="tools" aria-labelledby="tools-title">
         <div class="container tools-inner">
-          <div class="section-heading"><h2 id="tools-title">工程ごとに使っている道具</h2></div>
+          <div class="section-heading"><h2 id="tools-title">制作工程と使用ツール</h2></div>
           <div class="tools-body">
             <dl class="tool-list">
-              <div><dt>ChatGPT</dt><dd>制作前の壁打ち、要件・構成・アイデアの整理、Knowledgeの参照。</dd></div>
-              <div><dt>Codex</dt><dd>Web実装、コード確認、修正、表示や動作の検証支援。</dd></div>
-              <div><dt>Gemini / Gemini Spark</dt><dd>公開Webや複数サイトの調査、情報整理、一次レビュー。</dd></div>
-              <div><dt>Microsoft Copilot</dt><dd>Excelでの定型集計・照合、作業手順とプロンプトの整理。</dd></div>
+              <div><dt><span class="tool-purpose">考える・整理する</span>ChatGPT</dt><dd>制作前の壁打ち、要件・構成・アイデアの整理、Knowledgeの参照。</dd></div>
+              <div><dt><span class="tool-purpose">実装・確認する</span>Codex</dt><dd>Web実装、コード確認、修正、表示や動作の検証支援。</dd></div>
+              <div><dt><span class="tool-purpose">調査・一次レビュー</span>Gemini / Gemini Spark</dt><dd>公開Webや複数サイトの調査、情報整理、一次レビュー。</dd></div>
+              <div><dt><span class="tool-purpose">業務データの照合・集計</span>Microsoft Copilot</dt><dd>Excelでの定型集計・照合、作業手順とプロンプトの整理。</dd></div>
             </dl>
             <div class="tool-extra">
               <h3>判断基準を蓄積する場所</h3>
@@ -196,7 +196,7 @@
             </div>
             <div class="tool-extra">
               <h3>制作・公開に使う道具</h3>
-              <p>Figma・Photoshop・Illustrator・HTML・CSS・JavaScript・GitHub・Cloudflare</p>
+              <p><span class="tool-production">画面・ビジュアルの制作 — Figma・Photoshop・Illustrator</span><span class="tool-production">Web実装・公開 — HTML・CSS・JavaScript・GitHub・Cloudflare</span></p>
             </div>
           </div>
         </div>
@@ -207,6 +207,7 @@
           <img class="profile-illustration" src="assets/img/profile-illustration.png" alt="プロフィール用イラスト。眼鏡をかけた人物のモノクロ線画" width="1264" height="1264" loading="lazy" />
           <div class="profile-copy">
             <h2 id="profile-title">山口 碧</h2>
+            <p class="profile-name-en" lang="en">Aoi Yamaguchi</p>
             <p>Webサイトの更新・制作、Web/UIデザインを中心に取り組んでいます。使う人に合わせた画面構成や操作を考え、ロゴやレイアウトなどのデザインも自分で制作・判断しています。</p>
             <p>制作では、要件整理や調査、実装、検証にAIを取り入れています。実際に使って確かめながら、必要な機能や伝わり方を見直しています。</p>
           </div>
@@ -215,8 +216,11 @@
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>山口 碧</span
-        ><small>© <span data-year>2026</span> Aoi Yamaguchi</small>
+        <div class="footer-brand">
+          <strong>Aoi Yamaguchi</strong>
+          <span>Web / UI Design × AI</span>
+        </div>
+        <small class="footer-copyright">© 2026 Aoi Yamaguchi</small>
       </div>
     </footer>
     <script src="assets/js/web-analytics.js" defer></script>

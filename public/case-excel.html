@@ -42,8 +42,8 @@
         <p class="detail-lead">回答データと参照データを照らし合わせ、差異を確認して分析用に集計する作業にCopilotを使っています。作業手順・確認箇所・プロンプトを整理し、同様の作業で繰り返し使える形にしています。</p>
         <dl class="case-overview">
           <div><dt>目的</dt><dd>同様の照合・集計を、確認手順と一緒に再利用する</dd></div>
-          <div><dt>本人</dt><dd>手順・プロンプトの作成、結果確認、修正、最終判断</dd></div>
-          <div><dt>AI</dt><dd>Copilotによる照合・集計・データ整理の補助</dd></div>
+          <div class="role-owner"><dt>本人</dt><dd>手順・プロンプトの作成、結果確認、修正、最終判断</dd></div>
+          <div class="role-support"><dt>AI</dt><dd>Copilotによる照合・集計・データ整理の補助</dd></div>
         </dl>
       </div>
     </section>
@@ -88,7 +88,15 @@
     </section>
     <div class="container case-back"><a class="button button--primary" href="index.html#cases">Case Studiesへ戻る</a></div>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><span>山口 碧</span><small>© 2026 Aoi Yamaguchi</small></div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong>Aoi Yamaguchi</strong>
+        <span>Web / UI Design × AI</span>
+      </div>
+      <small class="footer-copyright">© 2026 Aoi Yamaguchi</small>
+    </div>
+  </footer>
   <script src="assets/js/web-analytics.js" defer></script>
 </body>
 </html>
