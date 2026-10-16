@@ -1,0 +1,58 @@
+/* Banner case: site-wide palette and typography inherit from site.css */
+.case-card--banner {
+  display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 28px; margin-top: 44px; padding: 30px;
+  background: #fff; border-left: 4px solid var(--teal);
+}
+.case-card--banner .banner-card-copy { min-width: 0; }
+.case-card--banner h3 { margin: 0 0 10px; color: var(--navy); font-size: 26px; line-height: 1.4; }
+.case-card--banner h3 a { text-decoration: underline; text-decoration-color: var(--teal); text-underline-offset: 5px; }
+.case-card--banner h3 a:hover { color: var(--accent-dark); }
+.case-card--banner .case-subtitle { margin: 0 0 14px; }
+.case-card--banner .banner-card-copy > p:not(.case-kicker):not(.case-subtitle) { margin: 0 0 14px; }
+.banner-card-previews { display: grid; align-content: center; gap: 16px; min-width: 0; }
+.banner-card-previews figure, .banner-hero-pair figure { margin: 0; }
+.banner-card-previews img, .banner-hero-pair img { width: 100%; border: 1px solid var(--line); }
+.banner-card-previews figcaption, .banner-hero-pair figcaption { margin-top: 6px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.banner-case-hero { padding-bottom: 58px; }
+.banner-case-hero .detail-lead { max-width: 54em; }
+.banner-case-hero .case-overview { margin-block: 30px; }
+.banner-hero-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
+.banner-disclaimer { max-width: 62em; margin: 22px 0 0; color: var(--muted); font-size: 13px; }
+.banner-intro p { max-width: 58em; }
+.banner-section-index { margin: 0 0 10px; color: var(--accent-dark); font: 700 12px Inter, sans-serif; letter-spacing: .09em; }
+.banner-intent { max-width: 62em !important; margin: 0 0 26px; }
+.banner-view-tabs { display: inline-flex; gap: 0; margin-bottom: 24px; padding: 4px; border: 1px solid var(--line); border-radius: 6px; background: var(--soft); }
+.banner-view-tabs[hidden] { display: none; }
+.banner-view-tabs button { min-height: 44px; padding: 10px 20px; border: 0; border-radius: 4px; background: transparent; color: var(--navy); font: 700 14px "Noto Sans JP",sans-serif; cursor: pointer; }
+.banner-view-tabs button[aria-selected="true"] { background: var(--navy); color: white; }
+.banner-gallery-panel[hidden] { display: none; }
+.banner-format-note { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+.banner-work-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.banner-work { min-width: 0; margin: 0; }
+.banner-work a { display: block; background: var(--soft); border: 1px solid var(--line); }
+.banner-work a:hover { border-color: var(--teal); }
+.banner-work img { display: block; width: 100%; height: auto; object-fit: contain; }
+.banner-work figcaption { display: grid; gap: 6px; margin-top: 12px; font-size: 14px; line-height: 1.65; }
+.banner-work figcaption .banner-work-index { color: var(--accent-dark); font-size: 12px; font-weight: 700; }
+.banner-work figcaption strong { color: var(--navy); font-size: 17px; }
+.banner-work figcaption > span:last-child { color: var(--muted); }
+.banner-zoom-hint { margin: 24px 0 0; color: var(--muted); font-size: 13px; }
+.banner-process .detail-columns p { max-width: 100%; }
+.banner-related { margin-top: 26px; }
+@media (max-width: 900px) {
+  .case-card--banner { grid-template-columns: 1fr; padding: 24px; }
+  .banner-card-previews { grid-template-columns: 1fr 1fr; }
+  .banner-work-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 22px; }
+}
+@media (max-width: 680px) {
+  .case-card--banner { margin-top: 36px; padding: 20px 18px; gap: 18px; }
+  .case-card--banner h3 { font-size: 23px; }
+  .banner-card-previews { gap: 10px; }
+  .banner-hero-pair { grid-template-columns: 1fr; gap: 18px; }
+  .banner-case-hero { padding-bottom: 38px; }
+  .banner-view-tabs { display: flex; width: 100%; }
+  .banner-view-tabs button { flex: 1; padding: 10px 8px; font-size: 13px; }
+  .banner-work-grid { grid-template-columns: 1fr; gap: 28px; }
+  .banner-work figcaption strong { font-size: 16px; }
+}
