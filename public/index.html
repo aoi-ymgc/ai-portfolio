@@ -56,8 +56,8 @@
         <div class="container hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">山口 碧｜Web/UIデザイン・AI活用事例</p>
-            <h1 id="hero-title">Web/UIを設計し、<br />AIと実装する。</h1>
-            <p class="hero-lead">使う人や目的に合わせて、画面構成・UI・必要な機能を自分で考えています。要件整理、調査、実装、検証にはAIを使い分け、Webツールの制作や日々の業務に取り入れています。</p>
+            <h1 id="hero-title">制作の困りごとを、<br />使えるWebツールに。</h1>
+            <p class="hero-lead">UIパーツを探す。ワイヤーフレームを組む。PCとスマホの見え方を比べる。自分が制作中に感じた手間を3つのツールにしました。画面と機能を考え、AIを実装や検証に活用した過程を紹介します。</p>
             <a class="button button--primary" href="#cases">制作事例を見る <span aria-hidden="true">↓</span></a>
           </div>
           <figure class="hero-figure">
@@ -92,7 +92,7 @@
                   <div><dt>本人</dt><dd>企画・機能選定・UI・操作設計・改善判断</dd></div>
                   <div><dt>AI</dt><dd>Codexによる実装・修正支援</dd></div>
                 </dl>
-                <p class="case-decision">表示比較は、6画面の案から390px・1440px中心の2画面へ絞りました。</p>
+                <p class="case-decision">Responsive Preview Labでは、当初の6画面案を見直し、まず390px・1440pxの2画面を見比べられる構成にしました。</p>
                 <a class="text-link" href="case-aoi-tools.html">Aoi Toolsの制作過程を見る <span aria-hidden="true">↗</span></a>
               </div>
             </article>
@@ -172,8 +172,8 @@
       <section class="section about-ai" id="about-ai" aria-labelledby="about-ai-title">
         <div class="container">
           <div class="section-heading">
-            <h2 id="about-ai-title">目的とデザインは、自分で決める。</h2>
-            <p class="section-intro">何を作るか、誰が使うか、どの機能を残すか。制作の方針を決めたうえで、工程ごとにAIの支援を取り入れています。</p>
+            <h2 id="about-ai-title">実装前に、使い方と必要な機能を決める。</h2>
+            <p class="section-intro">例えば画面比較ツールは、一度に多くの端末を並べるより、よく確認するPCとスマホの2画面を先に見せる設計へ変更しました。機能を増やすかどうかも、実際の作業を基準に判断しています。</p>
           </div>
           <div class="roles">
             <div class="role">
@@ -190,13 +190,14 @@
 
       <section class="section workflow" id="workflow" aria-labelledby="workflow-title">
         <div class="container">
-          <div class="section-heading"><h2 id="workflow-title">制作の工程に合わせて、AIを使い分ける。</h2></div>
+          <div class="section-heading">
+            <h2 id="workflow-title">Aoi Toolsでの制作の進め方</h2>
+            <p class="section-intro workflow-intro">制作のたびに決まった手順を当てはめるのではなく、困っていた作業から必要な機能を考えました。</p>
+          </div>
           <ol class="workflow-list">
-            <li><span class="workflow-number">01</span><h3>目的と条件を整理</h3><div><p><span class="workflow-owner">本人:</span> 誰が何に使うか、必要な条件を決めます。</p><p class="workflow-support">AI支援: ChatGPTで要件を整理し、必要に応じてGeminiで公開情報を調べます。</p></div></li>
-            <li><span class="workflow-number">02</span><h3>構成とデザインを決定</h3><div><p><span class="workflow-owner">本人:</span> 画面構成、UI、ロゴ、必要な機能を自分で制作・判断します。</p><p class="workflow-support">AI支援: 関係するKnowledgeを参照し、判断材料を確認します。</p></div></li>
-            <li><span class="workflow-number">03</span><h3>制作・実装</h3><div><p><span class="workflow-owner">本人:</span> 決めた仕様とデザインをもとに、画面や機能を形にします。</p><p class="workflow-support">AI支援: Codexを使って実装・コード確認・修正を進めます。</p></div></li>
-            <li><span class="workflow-number">04</span><h3>実画面で確認</h3><div><p><span class="workflow-owner">本人:</span> 表示、操作、内容を確かめ、直す箇所を判断します。</p><p class="workflow-support">AI支援: Codexの検証や、必要に応じてGeminiの一次レビューを使います。</p></div></li>
-            <li><span class="workflow-number">05</span><h3>修正・仕上げ</h3><div><p><span class="workflow-owner">本人:</span> 修正後の画面を確認し、完成と公開の判断を行います。</p><p class="workflow-support">AI支援: Codexで修正を進め、使い回す手順や判断基準を整理します。</p></div></li>
+            <li><span class="workflow-number">01</span><h3>困っていた場面を拾う</h3><div><p>UIパーツの名前が分からず探しにくい、画面サイズの切り替えが手間になる、といった作業中の問題を整理。</p><p class="workflow-support">ChatGPTで要件の言語化を補助。</p></div></li>
+            <li><span class="workflow-number">02</span><h3>操作の形を決める</h3><div><p>検索やプレビューの画面構成、表示する項目、操作の順番を設計。見た目の案を作って終わりにせず、実装につなげました。</p><p class="workflow-support">CodexでHTML・CSS・JavaScriptの実装や修正を支援。</p></div></li>
+            <li><span class="workflow-number">03</span><h3>触って、減らして、直す</h3><div><p>実際の画面で動きを確認し、Responsive Preview Labでは6画面案を2画面中心に変更。日常の確認で使いやすい形を優先しました。</p><p class="workflow-support">AIによるコード確認も参考にし、採用する仕様は実画面を見て判断。</p></div></li>
           </ol>
           <div class="workflow-note">
             <h3>制作ルールも、次の作業へ。</h3>
@@ -234,8 +235,9 @@
           <div class="profile-copy">
             <h2 id="profile-title">山口 碧</h2>
             <p class="profile-name-en" lang="en">Aoi Yamaguchi</p>
-            <p>Webサイトの更新・制作、Web/UIデザインを中心に取り組んでいます。使う人に合わせた画面構成や操作を考え、ロゴやレイアウトなどのデザインも自分で制作・判断しています。</p>
-            <p>制作では、要件整理や調査、実装、検証にAIを取り入れています。実際に使って確かめながら、必要な機能や伝わり方を見直しています。</p>
+            <p>FigmaでのWeb/UIデザイン、Webサイトの更新、バナーなどの制作に取り組んでいます。自分が作業中に感じた不便から、Aoi Toolsの3つのWebツールも制作しました。</p>
+            <p>AIは要件整理や実装の補助に使っています。画面の使い勝手を実際に確かめ、使う機能と外す機能を決めるのは自分の役割です。</p>
+            <a class="text-link profile-works-link" href="https://aoi-ymgc.github.io/portfolio/">Web・グラフィックの制作実績を見る <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
