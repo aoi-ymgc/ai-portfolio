@@ -62,7 +62,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
   margin: 0; color: var(--navy); font-size: 44px;
   line-height: 1.35; letter-spacing: 0.01em;
 }
-.hero-lead { max-width: 40em; margin: 20px 0 24px; }
+.hero-lead { max-width: 36em; margin: 20px 0 24px; text-wrap: pretty; }
 .hero-figure { margin: 0; }
 .hero-figure img {
   width: 100%; border: 1px solid var(--line); background: #fff;
@@ -181,6 +181,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
 .workflow-list p { max-width: 42em; margin: 0; line-height: 1.7; }
 .workflow-owner { font-weight: 700; }
 .workflow-list .workflow-support { margin-top: 6px; color: #d1d9e3; font-size: 14px; line-height: 1.6; }
+.workflow-intro { max-width: 46em; margin: 12px 0 0; color: #e2e8ee; }
 .workflow-note { margin-top: 28px; padding: 20px 0 0; border-top: 1px solid #aab7c8; }
 .workflow-note h3 { margin: 0 0 8px; font-size: 20px; }
 .workflow-note p { max-width: 42em; margin: 0 0 8px; }
@@ -213,6 +214,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
 .profile-copy h2 { margin-bottom: 4px; }
 .profile-copy p { max-width: 40em; margin: 0 0 16px; }
 .profile-copy .profile-name-en { margin-bottom: 24px; color: var(--muted); font-family: Inter, sans-serif; font-size: 0.875rem; font-weight: 500; line-height: 1.5; letter-spacing: 0.06em; }
+.profile-works-link { margin-top: 2px; }
 .site-footer { color: #fff; background: var(--navy); }
 .footer-inner { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 2px; min-height: 100px; padding-block: 14px; }
 .footer-brand { display: grid; gap: 0; }
@@ -580,3 +582,30 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
     transition: none !important;
   }
 }
+
+/* Keep Japanese paragraphs and headings readable across viewport sizes. */
+main p,
+main figcaption {
+  text-wrap: pretty;
+}
+
+main h2,
+main h3,
+main h4,
+.hero h1,
+.detail-hero h1 {
+  text-wrap: balance;
+}
+
+main .section-intro {
+  text-wrap: pretty;
+}
+/* Short descriptive lines should break at meaningful phrase boundaries. */
+.case-subtitle,
+.workflow-support,
+.detail-section figcaption {
+  text-wrap: balance;
+}
+
+/* Keep short Japanese terms intact at narrow widths. */
+.unbroken-phrase { white-space: nowrap; }
