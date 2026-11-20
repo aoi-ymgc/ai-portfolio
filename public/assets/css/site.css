@@ -582,3 +582,30 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline
     transition: none !important;
   }
 }
+
+/* Keep Japanese paragraphs and headings readable across viewport sizes. */
+main p,
+main figcaption {
+  text-wrap: pretty;
+}
+
+main h2,
+main h3,
+main h4,
+.hero h1,
+.detail-hero h1 {
+  text-wrap: balance;
+}
+
+main .section-intro {
+  text-wrap: pretty;
+}
+/* Short descriptive lines should break at meaningful phrase boundaries. */
+.case-subtitle,
+.workflow-support,
+.detail-section figcaption {
+  text-wrap: balance;
+}
+
+/* Keep short Japanese terms intact at narrow widths. */
+.unbroken-phrase { white-space: nowrap; }
